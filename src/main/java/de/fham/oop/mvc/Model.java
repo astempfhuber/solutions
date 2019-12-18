@@ -1,15 +1,7 @@
 package de.fham.oop.mvc;
 
-public class Model {
-    private String text = "Whatever";
+public interface Model {
+    public String getText();
 
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        if (text != null) {
-            this.text = text;
-        }
-    }
+    public void countUp();
 }

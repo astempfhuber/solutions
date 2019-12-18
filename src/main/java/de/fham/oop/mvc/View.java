@@ -1,9 +1,6 @@
 package de.fham.oop.mvc;
 
-import de.fham.oop.swing.SwingBasicsFrame;
-
 import javax.swing.*;
-import java.awt.event.ActionListener;
 
 public class View extends JPanel {
 
@@ -19,13 +16,18 @@ public class View extends JPanel {
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setSize(300, 200);
 
+
         jButton = new JButton("Hit me");
         jButton.addActionListener(controller);
+        jButton.setSize(100, 50);
+        jButton.setVisible(true);
         jFrame.add(jButton);
 
         jLabel = new JLabel();
+        jFrame.setVisible(true);
         jFrame.add(jLabel);
 
+        jFrame.setVisible(true);
     }
 
     public void update(){
